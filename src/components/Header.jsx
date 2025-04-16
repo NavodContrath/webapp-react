@@ -6,17 +6,17 @@ export default function Header() {
     return (
         <header>
             {isSingleMoviePage ? (
-                <div className="nav-bar  bg-danger">
+                <div className="nav-bar">
                     <div className="container d-flex justify-content-center align-items-center" style={{ height: "60px" }}>
-                        <NavLink className="nav-link fw-bold fs-3 text-dark" to="/">Boolflix</NavLink>
+                        <NavLink className="nav-home fw-bold fs-3" to="/">Boolflix</NavLink>
                     </div>
                 </div>
             ) : (
-                <div className="nav-bar py-3 bg-danger">
+                <div className="nav-bar py-3">
                     <div className="container-fluid d-flex flex-wrap justify-content-between align-items-center px-5">
                         <div className="d-flex align-items-center gap-4">
                             <div className="logo fw-bold fs-4">
-                                <NavLink className="nav-link text-dark" to="/">Boolflix</NavLink>
+                                <NavLink className="nav-home" to="/">Boolflix</NavLink>
                             </div>
                         </div>
                         <form className="d-flex mt-3 mt-md-0" role="search">
