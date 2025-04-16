@@ -32,32 +32,27 @@ export default function SingleMovie() {
                 </div>
             </div>
             <div className="container">
-
                 {
                     movie.reviews?.map(review => {
                         return (
-                            <>
-                                <div className="card bg-dark text-white mb-4 shadow rounded-4 border border-secondary" key={review.id}>
-                                    <div className="card-header d-flex align-items-center justify-content-between border-bottom border-secondary">
-                                        <h5 className="text-danger fw-bold mb-0">{review.name}</h5>
-                                        <div className="rating d-flex">
-                                            {
-                                                rating.map((star) => (
-                                                    <i key={star} className={`fa-star me-1 ${star <= Math.ceil(review.vote) ? 'fa-solid text-warning' : 'fa-regular text-secondary'}`}></i>
-                                                ))
-                                            }
-                                        </div>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="card-text text-light">{review.text}</p>
-                                    </div>
-
-                                    <div className="card-footer border-top border-secondary">
-                                        Created at: {review.created_at.slice(0, 10)}
+                            <div className="card bg-dark text-white mb-4 shadow rounded-4 border border-secondary" key={review.id}>
+                                <div className="card-header d-flex align-items-center justify-content-between border-bottom border-secondary">
+                                    <h5 className="text-danger fw-bold mb-0">{review.name}</h5>
+                                    <div className="rating d-flex">
+                                        {
+                                            rating.map((star) => (
+                                                <i key={star} className={`fa-star me-1 ${star <= Math.ceil(review.vote) ? 'fa-solid text-warning' : 'fa-regular text-secondary'}`}></i>
+                                            ))
+                                        }
                                     </div>
                                 </div>
-
-                            </>
+                                <div className="card-body">
+                                    <p className="card-text text-light">{review.text}</p>
+                                </div>
+                                <div className="card-footer border-top border-secondary">
+                                    Created at: {review.created_at.slice(0, 10)}
+                                </div>
+                            </div>
                         )
                     })
                 }
