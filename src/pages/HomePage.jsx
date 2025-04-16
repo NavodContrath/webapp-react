@@ -5,17 +5,17 @@ export default function HomePage() {
 
     return (
         <>
-            <div className="p-5 mb-4">
+            <div className="p-5 mt-5">
                 <div className="container py-5 bg-dark text-white rounded-4 shadow border border-light">
                     <h1 className="display-4 fw-bold mb-3">Welcome to <span className="text-danger">Boolflix</span>!</h1>
                     <p className="fs-5 lh-lg">
-                        Boolflix is the world's leading streaming entertainment service with over 200 million paid memberships in over 190 countries. Members enjoy a wide variety of award-winning TV shows, movies, documentaries, and more—anytime, anywhere, and on any internet-connected screen.
+                        Boolflix is the world's leading reviewing service with over 2000+ movies reviewed. Members enjoy reviews for a wide variety of award-winning TV shows, movies, documentaries.
                         <br /><br />
-                        With Boolflix, you're in control: pause, play, resume watching, or binge an entire season—there are no commercials, and there's always something new to discover.
+                        With Boolflix, you're in control, and there's always something new to discover.
                     </p>
                 </div>
             </div>
-            <div className="container">
+            <div className="container my-5">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     {
                         movies.map(movie => {
