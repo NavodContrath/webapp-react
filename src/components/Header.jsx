@@ -8,7 +8,7 @@ export default function Header() {
                     <div className="d-flex">
                         <div className="logo">CIAO</div>
                         <ul className="d-flex gap-3">
-                            <li>HOME</li>
+                            <NavLink to={'/'} >HOME</NavLink>
                             <li>CONTATTI</li>
                         </ul>
                     </div>
