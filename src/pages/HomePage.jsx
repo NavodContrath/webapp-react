@@ -10,9 +10,11 @@ export default function HomePage() {
                     <h1 className="display-4 fw-bold mb-3">Welcome to <span className="text-dark-danger">Boolflix</span>!</h1>
                     <p className="fs-5 lh-lg">
                         Boolflix is the world's leading reviewing service with over 2000+ movies reviewed. Members enjoy reviews for a wide variety of award-winning TV shows, movies, documentaries.
-                        <br /><br />
+                    </p>
+                    <p>
                         With Boolflix, you're in control, and there's always something new to discover.
                     </p>
+
                 </div>
             </div>
             <MovieList movies={movies} />
