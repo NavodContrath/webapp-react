@@ -1,6 +1,12 @@
 @import 'bootstrap';
 
+body{
+    background-color: black;
+}
 
 ul{
     list-style: none;
 }
+.card-img-top {
+  height: 400px;
+  }

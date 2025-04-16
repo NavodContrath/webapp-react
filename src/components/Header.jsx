@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 export default function Header() {
     return (
         <header>
-            <div className="nav-bar py-3 bg-light border" >
+            <div className="nav-bar py-3 bg-danger" >
                 <div className="container d-flex justify-content-between">
                     <div className="d-flex">
                         <div className="logo">CIAO</div>
