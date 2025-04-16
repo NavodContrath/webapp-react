@@ -6,9 +6,9 @@ export default function Header() {
     return (
         <header>
             {isSingleMoviePage ? (
-                <div className="nav-bar">
+                <div className="nav-bar bg-dark-danger">
                     <div className="container d-flex justify-content-center align-items-center" style={{ height: "60px" }}>
-                        <NavLink className="nav-home fw-bold fs-3" to="/">Boolflix</NavLink>
+                        <NavLink className="nav-home-2 fw-bold fs-3" to="/">Boolflix</NavLink>
                     </div>
                 </div>
             ) : (
