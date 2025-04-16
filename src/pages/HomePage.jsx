@@ -1,17 +1,6 @@
-import { useState, useEffect } from "react"
-
+import { useGlobal } from "../contexts/GlobalContext"
 export default function HomePage() {
-    const [movies, setMovies] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:3000/api/v1/movies')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-                setMovies(data)
-            })
-            .catch(error => console.log(error))
-    }, [])
+    const { movies } = useGlobal()
 
     return (
         <>
