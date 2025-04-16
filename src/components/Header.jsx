@@ -3,22 +3,19 @@ import { NavLink } from "react-router-dom"
 export default function Header() {
     return (
         <header>
-            <div className="nav-bar py-3 bg-danger" >
-                <div className="container d-flex justify-content-between">
-                    <div className="d-flex">
-                        <div className="logo">CIAO</div>
-                        <ul className="d-flex gap-3">
-                            <NavLink to={'/'} >HOME</NavLink>
-                            <li>CONTATTI</li>
-                        </ul>
+            <div className="nav-bar py-3 bg-danger">
+                <div className="container-fluid d-flex flex-wrap justify-content-between align-items-center px-5">
+                    <div className="d-flex align-items-center gap-4">
+                        <div className="logo fw-bold fs-4 text-dark">
+                            <NavLink className='nav-link text-white' to={'/'}>Boolflix</NavLink>
+                        </div>
                     </div>
-                    <div>
-                        <form action="">
-                            <input type="search" className="btn border" name="book-search" id="book-search" />
-                            <button type="button" className="btn btn-outline-primary">search</button>
-
-                        </form>
-                    </div>
+                    <form className="d-flex mt-3 mt-md-0" role="search">
+                        <input type="search" className="form-control bg-dark text-white border-0 rounded-0" placeholder="Search" />
+                        <button type="submit" className="btn btn-dark rounded-0 border-0">
+                            <i className="bi bi-search"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </header>
