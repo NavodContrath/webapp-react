@@ -9,6 +9,7 @@
 }
 body{
     background-color: #212529;
+    padding-top: 80px;
 }
 /*UTILITIES*/
 .card-img-top {
@@ -44,7 +45,7 @@ header{
     top: 0;
     width: 100%;
     z-index: 10;
-    
+    height: 80px;
 }
 footer{
     background-color: black;
@@ -53,4 +54,5 @@ footer{
         list-style: none;
     }
 }
+
 
