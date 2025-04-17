@@ -5,7 +5,7 @@ export default function HomePage() {
 
     return (
         <>
-            <div className="p-5 mt-5">
+            <div className="p-5 mt-3">
                 <div className="container py-5 bg-black text-white rounded-4 shadow ">
                     <h1 className="display-4 fw-bold mb-3">Welcome to <span className="text-dark-danger">Boolflix</span>!</h1>
                     <p className="fs-5 lh-lg">
