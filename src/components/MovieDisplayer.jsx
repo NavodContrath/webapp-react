@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function MovieDisplayer({ movie, movies }) {
 
     return (
-        <div className="single-movie p-5 my-5">
+        <div className="single-movie p-5 mb-5">
             <div className="container bg-black text-white rounded-3 p-5 shadow">
                 <div className="row align-items-center">
                     <div className="col-md-6 mb-4 mb-md-0">
