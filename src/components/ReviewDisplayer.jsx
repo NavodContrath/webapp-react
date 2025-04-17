@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function ReviewDisplayer({ movie, rating }) {
     return (
         <>
@@ -30,9 +31,11 @@ export default function ReviewDisplayer({ movie, rating }) {
                             )
                         })
                     }
+                    <Link className="btn btn-danger bg-dark-danger border-0" to='/reviews/add_review'>
+                        Add review
+                    </Link>
                 </div>
             </div>
-
         </>
     )
 }
