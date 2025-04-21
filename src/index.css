@@ -9,7 +9,6 @@
 }
 body{
     background-color: #212529;
-    padding-top: 80px;
 }
 /*UTILITIES*/
 .card-img-top {
@@ -45,7 +44,11 @@ header{
     top: 0;
     width: 100%;
     z-index: 10;
-    height: 80px;
+    height: 56px;
+}
+main{
+    min-height: calc(100vh - 56px);
+    padding-top: 56px;
 }
 footer{
     background-color: black;

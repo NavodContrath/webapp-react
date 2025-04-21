@@ -24,7 +24,7 @@ export default function ReviewDisplayer({ movie, rating }) {
                                             <p className="card-text text-light">{review.text}</p>
                                         </div>
                                         <div className="card-footer">
-                                            Created at: {review.created_at.slice(0, 10)}
+                                            Created at: {new Date(review.created_at).toLocaleString()}
                                         </div>
                                     </div>
                                 </div>
