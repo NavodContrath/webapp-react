@@ -1,7 +1,7 @@
 import { useGlobal } from "../contexts/GlobalContext"
 import MovieList from "../components/MoviesList"
 export default function HomePage() {
-    const { movies } = useGlobal()
+    const { movies, loading } = useGlobal()
 
     return (
         <>
@@ -17,7 +17,7 @@ export default function HomePage() {
 
                 </div>
             </div>
-            <MovieList movies={movies} />
+            <MovieList movies={movies} loading={loading} />
 
         </>
     )
