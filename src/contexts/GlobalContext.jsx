@@ -4,6 +4,7 @@ const GlobalContext = createContext()
 
 function GlobalProvider({ children }) {
     const [movies, setMovies] = useState([])
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch('http://localhost:3000/api/v1/movies')
@@ -11,12 +12,13 @@ function GlobalProvider({ children }) {
             .then(data => {
                 console.log(data)
                 setMovies(data)
+                setLoading(false)
             })
             .catch(error => console.log(error))
     }, [])
 
     return (
-        <GlobalContext.Provider value={{ movies }}>
+        <GlobalContext.Provider value={{ movies, loading, setLoading }}>
             {children}
         </GlobalContext.Provider>
     )
