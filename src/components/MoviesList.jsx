@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom"
 
-export default function MovieList({ movies }) {
+export default function MovieList({ movies, loading }) {
+
+
     return (
-        <div className="container my-5">
+
+        <div className="container my-5 position-relative">
+            {loading && (
+                <div className="d-flex justify-content-center align-items-center loader">
+                    <div className="spinner-border text-light" style={{ width: "4rem", height: "4rem" }} role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            )}
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 {
                     movies.map(movie => {
